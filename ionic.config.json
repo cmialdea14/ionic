@@ -1,0 +1,8 @@
+{
+  "name": "miPrimeraAppTabs",
+  "app_id": "3e9c8e62",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
