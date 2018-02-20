@@ -7,5 +7,26 @@
 </ion-header>
 
 <ion-content padding>
+	<h2>Usuarios: </h2>
+	<!-- Listas con ion-list alimnetados dinamicamente-->
+	<ion-list>
+		<button ion-item *ngFor="let item of lista" detail-push no-padding>
+			<ion-avatar item-left>
+				<img [src]="'assets/imgs/ico_'+item.dni+'.jpg'">
+			</ion-avatar>
+			<h2>{{item.nombre}}</h2>
+			<p>{{item.dni}}</p>
+			<ion-note item-right>{{item.fechaIncorporacion}}</ion-note>
+		</button>
+	</ion-list>	
+	<!--Lista de botones dinamica-->
+	<ion-list>
+		<ion-list-header text-capitalize color="dark">Listado Dni</ion-list-header>	
 
+		<button ion-item *ngFor="let item of lista" text-uppercase detail-none>
+			<!-- Un ion-toggle tenemos que combinarlo con un ion-label, ya que con un p o un hX no combina bien. -->
+			<ion-label>{{item.dni}}</ion-label>
+			<ion-toggle color="secondary" item-right></ion-toggle>
+		</button>
+	</ion-list>	
 </ion-content>

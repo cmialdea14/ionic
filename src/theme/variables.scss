@@ -37,8 +37,9 @@ $colors: (
   primary:    #488aff,
   secondary:  #32db64,
   danger:     #f53d3d,
-  light:      #f4f4f4,
-  dark:       #222
+  light:      #fff,
+  dark:       #222,
+  tis: 		  #004A7F
 );
 
 
@@ -86,3 +87,10 @@ $colors: (
 
 @import "roboto";
 @import "noto-sans";
+
+
+// Cambio de valores de variables SASS
+$tabs-background:  #004A7F;
+$text-color: #004A7F;
+$tabs-tab-color-inactive: #FFF;
+$tabs-tab-color-active: #FFF;

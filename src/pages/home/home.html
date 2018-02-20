@@ -5,13 +5,19 @@
 </ion-header>
 
 <ion-content padding>
-  <h2>Welcome to Ionic!</h2>
+  <h2>Bienvenido</h2>
   <p>
-    This starter project comes with simple tabs-based layout for apps
-    that are going to primarily use a Tabbed UI.
+    Ejemplo de aplicación Ionic
   </p>
   <p>
-    Take a look at the <code>src/pages/</code> directory to add or change tabs,
-    update any existing page or create new pages.
+    Accede a <code>src/pages/</code> para añadir o cambiar tabs,
+    actualizar alguna página existente o crear nuevas páginas.
   </p>
+
+  <ion-list>
+    <ion-list-header>Lista API REST</ion-list-header>
+    <ion-item *ngFor="let user of listaUsuarios">
+      <h2>{{user.name}}</h2> 
+    </ion-item>
+  </ion-list>
 </ion-content>
